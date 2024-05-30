@@ -1,11 +1,10 @@
 ---
 title: Recreated Jett Abilities
 publishedAt: 2024-02-01T00:57:25.166Z
-summary: "I have recreated the Valorant game Agent Jett Abilities in Unreal Engine 5"
-roles: "System Designer"
+summary: 'I have recreated the Valorant game Agent Jett Abilities in Unreal Engine 5'
+roles: 'System Designer'
 highlight: true
 ---
-
 
 ### Software used
 
@@ -20,21 +19,40 @@ highlight: true
 - Cloud burst
 
 - Updraft
- 
+
 - Tail wind
 
-
 # Tail wind
+
 Instantly throw a projectile that expands into a brief vision-blocking cloud on impact with a surface. HOLD the ability key to curve the smoke in the direction of your crosshair.
 
 ## Actual Game Ability
-<video preload="none" autoplay="" loop="" playsinline="true" controls muted src="https://video.wixstatic.com/video/e8c5ff_275bc0b1cb814188a18075b7f09c33bb/1080p/mp4/file.mp4"></video>
+
+<video
+  preload="none"
+  autoplay=""
+  loop=""
+  playsinline="true"
+  controls
+  muted
+  src="https://video.wixstatic.com/video/e8c5ff_275bc0b1cb814188a18075b7f09c33bb/1080p/mp4/file.mp4"
+></video>
 
 ## Recreated Ability
-<video preload="none" autoplay="" loop="" playsinline="true" controls muted src="https://video.wixstatic.com/video/e8c5ff_8dc1a9dae882431989497d192cf99b4a/1080p/mp4/file.mp4"></video>
+
+<video
+  preload="none"
+  autoplay=""
+  loop=""
+  playsinline="true"
+  controls
+  muted
+  src="https://video.wixstatic.com/video/e8c5ff_8dc1a9dae882431989497d192cf99b4a/1080p/mp4/file.mp4"
+></video>
 
 ## Blue print logic
-- Step 1: Create a Key Binding for Dash 
+
+- Step 1: Create a Key Binding for Dash
 
 - Step 2: Assign input action in Thirdperson Blueprint character
 
@@ -42,43 +60,96 @@ Instantly throw a projectile that expands into a brief vision-blocking cloud on 
 
 - Step 4: Assign the ground friction node to launch character
 
-So when the player press "E" (assigned dash input key) the character friction is increased to 1.5 so the character slides on surface and then we need to add a delay function and add one more ground friction node and set it to 0.8 which is default friction. we have added delay node and connected to ground friction  because when we launch the dash ability the friction is increased to 1.5 and after a delay of 2 sec it comes back to normal friction 
+So when the player press "E" (assigned dash input key) the character friction is increased to 1.5 so the character slides on surface and then we need to add a delay function and add one more ground friction node and set it to 0.8 which is default friction. we have added delay node and connected to ground friction because when we launch the dash ability the friction is increased to 1.5 and after a delay of 2 sec it comes back to normal friction
 
-<img src="https://static.wixstatic.com/media/e8c5ff_9f62dd9225a940aea2baf7b7aa5c1251~mv2.png/v1/fill/w_1263,h_531,al_c,q_90,enc_auto/Screenshot%202023-02-27%20152520.png" alt="Screenshot 2023-02-27 152520.png" width="100%" ></img>
+<img
+  src="https://static.wixstatic.com/media/e8c5ff_9f62dd9225a940aea2baf7b7aa5c1251~mv2.png/v1/fill/w_1263,h_531,al_c,q_90,enc_auto/Screenshot%202023-02-27%20152520.png"
+  alt="Screenshot 2023-02-27 152520.png"
+  width="100%"
+></img>
 
 I have added Dash Function and connected it to last launch direction to prevent it from changing the direction when dash function is used.
 
-<img src="https://static.wixstatic.com/media/e8c5ff_cebebefaf7c64bfb833d03b08517aa2b~mv2.png/v1/fill/w_1263,h_531,al_c,q_90,enc_auto/screen%20shot%202.png" alt="Screenshot 2023-02-27 152520.png" width="100%" ></img>
+<img
+  src="https://static.wixstatic.com/media/e8c5ff_cebebefaf7c64bfb833d03b08517aa2b~mv2.png/v1/fill/w_1263,h_531,al_c,q_90,enc_auto/screen%20shot%202.png"
+  alt="Screenshot 2023-02-27 152520.png"
+  width="100%"
+></img>
 
 Get dash function node logic.
 
-<img src="https://static.wixstatic.com/media/e8c5ff_cd260467b7874a00a609683a1e5854f6~mv2.png/v1/fill/w_1225,h_515,al_c,q_90,enc_auto/Screenshot%202023-02-28%20032452.png" alt="Screenshot 2023-02-27 152520.png" width="100%" ></img>
-
+<img
+  src="https://static.wixstatic.com/media/e8c5ff_cd260467b7874a00a609683a1e5854f6~mv2.png/v1/fill/w_1225,h_515,al_c,q_90,enc_auto/Screenshot%202023-02-28%20032452.png"
+  alt="Screenshot 2023-02-27 152520.png"
+  width="100%"
+></img>
 
 # Updraft
+
 Instantly propel Jett high into the air.
 
 ## Actual Game Ability
-<video preload="none" autoplay="" loop="" playsinline="true" controls muted src="https://video.wixstatic.com/video/e8c5ff_bc17520b35934fd3ad737eead7d4b661/1080p/mp4/file.mp4"></video>
+
+<video
+  preload="none"
+  autoplay=""
+  loop=""
+  playsinline="true"
+  controls
+  muted
+  src="https://video.wixstatic.com/video/e8c5ff_bc17520b35934fd3ad737eead7d4b661/1080p/mp4/file.mp4"
+></video>
 
 ## Recreated Ability
-<video preload="none" autoplay="" loop="" playsinline="true" controls muted src="https://video.wixstatic.com/video/e8c5ff_856b35dc5c0a44259686cb7487d33878/1080p/mp4/file.mp4"></video>
+
+<video
+  preload="none"
+  autoplay=""
+  loop=""
+  playsinline="true"
+  controls
+  muted
+  src="https://video.wixstatic.com/video/e8c5ff_856b35dc5c0a44259686cb7487d33878/1080p/mp4/file.mp4"
+></video>
 
 ## Blue print logic
 
-<img src="https://static.wixstatic.com/media/e8c5ff_93a2be9d2ce14b4ea900de43510787c9~mv2.png/v1/fill/w_1028,h_432,al_c,q_90,enc_auto/Screenshot%202023-02-28%20033103.png" alt="Screenshot 2023-02-27 152520.png" width="100%" ></img>
-
+<img
+  src="https://static.wixstatic.com/media/e8c5ff_93a2be9d2ce14b4ea900de43510787c9~mv2.png/v1/fill/w_1028,h_432,al_c,q_90,enc_auto/Screenshot%202023-02-28%20033103.png"
+  alt="Screenshot 2023-02-27 152520.png"
+  width="100%"
+></img>
 
 # Cloud Burst
+
 It's a Vision Blocker ability that Jett instantly throws forward on activation
 
 ## Actual Game Ability
-<video preload="none" autoplay="" loop="" playsinline="true" controls muted src="https://video.wixstatic.com/video/e8c5ff_22d4a1c522ff40c4bf0baa56c1196d5f/1080p/mp4/file.mp4"></video>
+
+<video
+  preload="none"
+  autoplay=""
+  loop=""
+  playsinline="true"
+  controls
+  muted
+  src="https://video.wixstatic.com/video/e8c5ff_22d4a1c522ff40c4bf0baa56c1196d5f/1080p/mp4/file.mp4"
+></video>
 
 ## Recreated Ability
-<video preload="none" autoplay="" loop="" playsinline="true" controls muted src="https://video.wixstatic.com/video/e8c5ff_0b8a5bb8dd544c0ba6904ae7edbfbbc7/1080p/mp4/file.mp4"></video>
+
+<video
+  preload="none"
+  autoplay=""
+  loop=""
+  playsinline="true"
+  controls
+  muted
+  src="https://video.wixstatic.com/video/e8c5ff_0b8a5bb8dd544c0ba6904ae7edbfbbc7/1080p/mp4/file.mp4"
+></video>
 
 ## Blue print logic
+
 - Step 1 : Create a actor blueprint and a select a sphere
 
 - Step 2 : Create a blueprint logic on component hit and connect it to set direction to make smoke flow in the direction at which it is used.
@@ -89,8 +160,16 @@ It's a Vision Blocker ability that Jett instantly throws forward on activation
 
 - Step 5 : connect scale 3D node to delay node (value set to 4 sec) and connect it to destroy actor. ( with this when the components hit anything in environment the size of the smoke increases to 3 and it stays for 4 sec in that particular place and then the actor gets destroyed).
 
-<img src="https://static.wixstatic.com/media/e8c5ff_9e716d6512514d79bb7951a0b83bc67d~mv2.png/v1/fill/w_1088,h_244,al_c,lg_1,q_85,enc_auto/on%20component%20hit.png" alt="Screenshot 2023-02-27 152520.png" width="100%" ></img>
+<img
+  src="https://static.wixstatic.com/media/e8c5ff_9e716d6512514d79bb7951a0b83bc67d~mv2.png/v1/fill/w_1088,h_244,al_c,lg_1,q_85,enc_auto/on%20component%20hit.png"
+  alt="Screenshot 2023-02-27 152520.png"
+  width="100%"
+></img>
 
 ## Blue print logic in third person character to launch smoke
 
-<img src="https://static.wixstatic.com/media/e8c5ff_983803c30f97468190cf55b3ffafb580~mv2.png/v1/fill/w_1215,h_432,al_c,q_90,enc_auto/third%20person%20BP.png" alt="Screenshot 2023-02-27 152520.png" width="100%" ></img>
+<img
+  src="https://static.wixstatic.com/media/e8c5ff_983803c30f97468190cf55b3ffafb580~mv2.png/v1/fill/w_1215,h_432,al_c,q_90,enc_auto/third%20person%20BP.png"
+  alt="Screenshot 2023-02-27 152520.png"
+  width="100%"
+></img>

@@ -36,12 +36,7 @@
   "frontMatter.content.snippets": {
     "Video Source": {
       "description": "",
-      "body": [
-        "<video preload=\"none\" autoplay=\"\" loop=\"true\" playsinline=\"true\"  muted ",
-        "src=\"\"",
-        "></video>",
-        ""
-      ],
+      "body": ["<video preload=\"none\" autoplay=\"\" loop=\"true\" playsinline=\"true\"  muted ", "src=\"\"", "></video>", ""],
       "isMediaSnippet": true
     },
     "YouTube Embed": {
@@ -61,12 +56,7 @@
     },
     "Image Source": {
       "description": "",
-      "body": [
-        "<img",
-        "src=\"\"",
-        "alt=\"\" width=\"100%\" >",
-        "</img>"
-      ],
+      "body": ["<img", "src=\"\"", "alt=\"\" width=\"100%\" >", "</img>"],
       "isMediaSnippet": true
     },
     "YouTube Video": {

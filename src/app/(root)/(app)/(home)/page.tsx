@@ -1,5 +1,5 @@
 import { SOCIALS } from '@/constans/common'
-import { FaInstagram, FaWhatsapp, FaLinkedin, FaArtstation  } from 'react-icons/fa'
+import { FaInstagram, FaWhatsapp, FaLinkedin, FaArtstation } from 'react-icons/fa'
 
 export default function HomePage() {
   return (
@@ -13,7 +13,8 @@ export default function HomePage() {
           <span className="grid grid-cols-2 justify-items-end">
             <span className="block"></span>
             <span className="block text-sm opacity-90">
-              A PASSIONATE GAME DESIGNER<br />& ENVIRONMENT ARTIST
+              A PASSIONATE GAME DESIGNER
+              <br />& ENVIRONMENT ARTIST
             </span>
           </span>
         </h1>
@@ -21,7 +22,13 @@ export default function HomePage() {
           <a href={SOCIALS.IG} aria-label="Instagram" target="_blank" rel="noopener" className="mx-2 block p-2 opacity-80 hover:opacity-95">
             <FaInstagram size={20} />
           </a>
-          <a href={SOCIALS.AS} aria-label="ArtStation" target="_blank" rel="noopener" className="mx-2 block p-2 opacity-80 hover:opacity-95">
+          <a
+            href={SOCIALS.AS}
+            aria-label="ArtStation"
+            target="_blank"
+            rel="noopener"
+            className="mx-2 block p-2 opacity-80 hover:opacity-95"
+          >
             <FaArtstation size={20} />
           </a>
           <a href={SOCIALS.IN} aria-label="Linkedin" target="_blank" rel="noopener" className="mx-2 block p-2 opacity-80 hover:opacity-95">

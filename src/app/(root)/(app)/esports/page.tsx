@@ -18,18 +18,28 @@ export default function AboutPage() {
   return (
     <>
       <PageTitle title="E-Sports" />
-      <div className="md:flex flex-col items-center">
-        <div className="md:flex md:flex-row-reverse md:justify-between md:items-center mb-5 md:w-100">
+      <div className="flex-col items-center md:flex">
+        <div className="md:w-100 mb-5 md:flex md:flex-row-reverse md:items-center md:justify-between">
           <div className="md:w-1/2 md:pr-6">
             <h2 className="mb-2 text-xl font-bold">Hey! I'm Ganesh Alla</h2>
             <div className="mb-6">
-              <p className="mb-1">    
-                I am so much passionate not only making the games but also interested to play  in a competitive scenario its been a dream for me to play valorant game in E-Sports Level and finally I participated in tryouts of Full Sail Armada (E-Sport collegiate team) for valorant game and I was selected for the main team among many other players which is like one of the dreams come true. This team gave me a opportunity to play in major tournaments like Cval, LCQ, NACE Star league .
+              <p className="mb-1">
+                I am so much passionate not only making the games but also interested to play in a competitive scenario its been a dream for
+                me to play valorant game in E-Sports Level and finally I participated in tryouts of Full Sail Armada (E-Sport collegiate
+                team) for valorant game and I was selected for the main team among many other players which is like one of the dreams come
+                true. This team gave me a opportunity to play in major tournaments like Cval, LCQ, NACE Star league .
               </p>
             </div>
           </div>
           <div className="md:w-1/2">
-            <Image src={ganesh} alt="Foto Ganesh Alla" className="block w-full h-auto" placeholder="blur" layout="responsive" style={{ padding: '20px' }} />
+            <Image
+              src={ganesh}
+              alt="Foto Ganesh Alla"
+              className="block h-auto w-full"
+              placeholder="blur"
+              layout="responsive"
+              style={{ padding: '20px' }}
+            />
           </div>
         </div>
       </div>

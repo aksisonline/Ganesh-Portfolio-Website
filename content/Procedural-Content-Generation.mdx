@@ -1,61 +1,89 @@
 ---
 title: Procedural Content Generation
 publishedAt: 2024-02-01T00:57:25.166Z
-summary: "The Procedural Content Generation Framework (PCG) is a toolset for creating your own procedural content and tools inside Unreal Engine."
-roles: "Environment Design"
+summary: 'The Procedural Content Generation Framework (PCG) is a toolset for creating your own procedural content and tools inside Unreal Engine.'
+roles: 'Environment Design'
 highlight: true
 ---
 
 The Procedural Content Generation Framework (PCG) is a toolset for creating your own procedural content and tools inside Unreal Engine.
 
-## In Engine Final Output: 
-<video preload="none" autoplay="" loop="true" playsinline="true"  muted 
-src="https://video.wixstatic.com/video/e8c5ff_ec8d10884350453388964ebcfcf00959/720p/mp4/file.mp4"
+## In Engine Final Output:
+
+<video
+  preload="none"
+  autoplay=""
+  loop="true"
+  playsinline="true"
+  muted
+  src="https://video.wixstatic.com/video/e8c5ff_ec8d10884350453388964ebcfcf00959/720p/mp4/file.mp4"
 ></video>
 
-## PCG Volume Workflow: 
-<video preload="none" autoplay="" loop="true" playsinline="true"  muted 
-src="https://video.wixstatic.com/video/e8c5ff_90c3e870d5014ffe99f5dc3d6015d0cd/720p/mp4/file.mp4"
+## PCG Volume Workflow:
+
+<video
+  preload="none"
+  autoplay=""
+  loop="true"
+  playsinline="true"
+  muted
+  src="https://video.wixstatic.com/video/e8c5ff_90c3e870d5014ffe99f5dc3d6015d0cd/720p/mp4/file.mp4"
 ></video>
 
 ### PCG Volume
+
 - PCG volume breakdown: Consider the PCG from create option and drag it to the scene, we need to consider this particular volume so that we can generate the mesh inside volume. consider PCG component and create a graph to access the particular volume with blueprints.
 
 <img
-src="https://static.wixstatic.com/media/e8c5ff_bce33e8c6bd74502abe9b2b4a1f2a67f~mv2.jpg/v1/fill/w_419,h_221,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Screenshot%20(16)_edited.jpg"
-alt="" width="100%" >
-</img>
+  src="https://static.wixstatic.com/media/e8c5ff_bce33e8c6bd74502abe9b2b4a1f2a67f~mv2.jpg/v1/fill/w_419,h_221,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Screenshot%20(16)_edited.jpg"
+  alt=""
+  width="100%"
+></img>
 
 <img
-src="https://static.wixstatic.com/media/e8c5ff_cfe3559276de4a939d5f0a1f9b2d9f85~mv2.png/v1/fill/w_426,h_437,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Screenshot%20(17).png"
-alt="" width="100%" >
-</img>
+  src="https://static.wixstatic.com/media/e8c5ff_cfe3559276de4a939d5f0a1f9b2d9f85~mv2.png/v1/fill/w_426,h_437,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Screenshot%20(17).png"
+  alt=""
+  width="100%"
+></img>
 
 - PCG graph: Inside the pcg graph, consider sampler surface sampler and if we connect it to landscape, it will give a sample of jpg.
 
 <img
-src="https://static.wixstatic.com/media/e8c5ff_9f58b499b91a47c5a2d2f8632bcef731~mv2.jpg/v1/fill/w_592,h_244,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/pcg%20graph_edited.jpg"
-alt="" width="100%" >
-</img><img
-src="https://static.wixstatic.com/media/e8c5ff_148d3f2e5b69441b9960e3b2f168fd97~mv2.png/v1/fill/w_518,h_426,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Screenshot%20(18).png"
-alt="" width="100%" >
-</img>
+  src="https://static.wixstatic.com/media/e8c5ff_9f58b499b91a47c5a2d2f8632bcef731~mv2.jpg/v1/fill/w_592,h_244,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/pcg%20graph_edited.jpg"
+  alt=""
+  width="100%"
+></img>
+<img
+  src="https://static.wixstatic.com/media/e8c5ff_148d3f2e5b69441b9960e3b2f168fd97~mv2.png/v1/fill/w_518,h_426,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Screenshot%20(18).png"
+  alt=""
+  width="100%"
+></img>
 
 - After we use the debug and drag the pcg graph into the scene we will be able to see the blocks randomly generate inside the volume and the if we move the volume it changes according to the landscape.
 
-<video preload="none" autoplay="" loop="true" playsinline="true"  muted 
-src="https://video.wixstatic.com/video/e8c5ff_09aa19bb69f241faadb7113c90fbf63f/720p/mp4/file.mp4"
+<video
+  preload="none"
+  autoplay=""
+  loop="true"
+  playsinline="true"
+  muted
+  src="https://video.wixstatic.com/video/e8c5ff_09aa19bb69f241faadb7113c90fbf63f/720p/mp4/file.mp4"
 ></video>
 
 - In order to have assets in place of cubes, connect the static mesh spawner node to surface sampler and in this particular node add entries and add custom meshes that will spawn in the scene.
 
 <img
-src="https://static.wixstatic.com/media/e8c5ff_19e22c13b6cd44688dc9495a22ac2cb6~mv2.png/v1/fill/w_720,h_252,al_c,lg_1,q_85,enc_auto/image.png"
-alt="" width="100%" >
-</img>
-<video preload="none" autoplay="" loop="true" playsinline="true"  muted 
-src="https://video.wixstatic.com/video/e8c5ff_4e80fe6532ff48efbb82deb158179490/720p/mp4/file.mp4"
+  src="https://static.wixstatic.com/media/e8c5ff_19e22c13b6cd44688dc9495a22ac2cb6~mv2.png/v1/fill/w_720,h_252,al_c,lg_1,q_85,enc_auto/image.png"
+  alt=""
+  width="100%"
+></img>
+<video
+  preload="none"
+  autoplay=""
+  loop="true"
+  playsinline="true"
+  muted
+  src="https://video.wixstatic.com/video/e8c5ff_4e80fe6532ff48efbb82deb158179490/720p/mp4/file.mp4"
 ></video>
-
 
 - As the mesh so close to each other we need to change the values in surface sample to get the better results. and we can add more surface samplers to have more layers to gain better results.

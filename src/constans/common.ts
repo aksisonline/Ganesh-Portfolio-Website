@@ -1,5 +1,5 @@
 import { FiHome, FiGlobe, FiClipboard, FiMail, FiUser, FiBookOpen } from 'react-icons/fi'
-import { MdOutlineSportsEsports } from "react-icons/md";
+import { MdOutlineSportsEsports } from 'react-icons/md'
 
 export const HOST = process.env.NEXT_PUBLIC_HOST || 'http://localhost:3000'
 

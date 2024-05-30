@@ -27,23 +27,28 @@ export default function AboutPage() {
         <div className="md:flex-1 md:pl-6">
           <h2 className="mb-2 text-xl font-bold">Hey! I'm Ganesh Alla</h2>
           <div className="mb-6">
-            <p className="mb-1">    
-Passionate game designer and environment artist, constantly strives to create engaging game designs and stunning environments, <br/>works every day to learn new thing and improve to keep upto the current technology and i love making games and process of making it.
+            <p className="mb-1">
+              Passionate game designer and environment artist, constantly strives to create engaging game designs and stunning environments,{' '}
+              <br />
+              works every day to learn new thing and improve to keep upto the current technology and i love making games and process of
+              making it.
             </p>
           </div>
           <h2 className="mb-2 text-xl font-bold">My Work Experience</h2>
           <div className="mb-6">
             <p className="mb-1">
-            <i>Cellec Games - Game designer/QA </i>
-              <br />
-              Worked as a Game Designer/QA at Cellec Games, Winter Park, FL, from April 2022 to March 2023. Contributed to the development and release of 6+ Unreal Engine games on Steam. Enhanced project workflows, tracked progress using Jira, and improved QA processes for heightened product quality.
+              <i>Cellec Games - Game designer/QA </i>
+              <br /> Worked as a Game Designer/QA at Cellec Games, Winter Park, FL, from April 2022 to March 2023. Contributed to the
+              development and release of 6+ Unreal Engine games on Steam. Enhanced project workflows, tracked progress using Jira, and
+              improved QA processes for heightened product quality.
             </p>
           </div>
           <h2 className="mb-2 text-xl font-bold">My Toolset</h2>
           <div className="mb-6">
-            <p className="mb-1">Unreal Engine | Unity | BluePrints | Adobe Illustrator | Autodesk Maya | Adobe Photoshop | Jira | Substance 
-Painter | Blender | GitHub | C programming | C# | Microsoft Office (Word, Excel) | AutoCAD | Confluence| 
-ShotGrid | Adobe Suite</p>
+            <p className="mb-1">
+              Unreal Engine | Unity | BluePrints | Adobe Illustrator | Autodesk Maya | Adobe Photoshop | Jira | Substance Painter | Blender
+              | GitHub | C programming | C# | Microsoft Office (Word, Excel) | AutoCAD | Confluence| ShotGrid | Adobe Suite
+            </p>
           </div>
           <a
             download
