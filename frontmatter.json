@@ -1,0 +1,88 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.framework.id": "next",
+  "frontMatter.content.publicFolder": "public",
+  "frontMatter.preview.host": "http://localhost:3000",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "content",
+      "path": "[[workspace]]/content"
+    }
+  ],
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "pageBundle": false,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "PublishedAt",
+          "name": "publishedAt",
+          "type": "datetime"
+        },
+        {
+          "title": "Summary",
+          "name": "summary",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "frontMatter.content.defaultFileType": "mdx",
+  "frontMatter.content.snippets": {
+    "Video Source": {
+      "description": "",
+      "body": [
+        "<video preload=\"none\" autoplay=\"\" loop=\"true\" playsinline=\"true\"  muted ",
+        "src=\"\"",
+        "></video>",
+        ""
+      ],
+      "isMediaSnippet": true
+    },
+    "YouTube Embed": {
+      "description": "",
+      "body": [
+        "<iframe",
+        "  width=\"560\"",
+        "  height=\"315\"",
+        "  src=\"\"",
+        "  frameborder=\"0\"",
+        "  allowfullscreen",
+        "  autoplay",
+        "  muted",
+        "></iframe>"
+      ],
+      "isMediaSnippet": true
+    },
+    "Image Source": {
+      "description": "",
+      "body": [
+        "<img",
+        "src=\"\"",
+        "alt=\"\" width=\"100%\" >",
+        "</img>"
+      ],
+      "isMediaSnippet": true
+    },
+    "YouTube Video": {
+      "description": "",
+      "body": [
+        "<iframe",
+        "  width=\"560\"",
+        "  height=\"315\"",
+        "  src=\"\"",
+        "  frameborder=\"0\"",
+        "  allowfullscreen",
+        "  autoplay",
+        "  muted",
+        "></iframe>"
+      ],
+      "fields": []
+    }
+  }
+}

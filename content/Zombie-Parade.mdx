@@ -1,0 +1,108 @@
+---
+title: Zombie Parade
+publishedAt: 2024-02-01T00:57:25.166Z
+summary: "A zombie shooter game made in Unreal Engine 5.2"
+roles: "Game Developer, System Designer, Game Designer, UI Designer"
+---
+
+# What is Zombie Parade?
+Zombie parade game takes place in New York city, the people over there get effected by an unknown virus that turns humans into zombies, in order to protect the city from getting destroyed FBI shows up to take the zombies down and we will be playing as an FBI agent. there are multiple types of zombies and they are incremented for each wave. Agent needs to survive as many waves as possible
+
+### Platform
+- PC
+
+### My Role
+- Game Developer
+
+- System Designer
+
+- Game Designer
+
+- UI Designer
+
+### My Contribution
+- Zombie model and animation implementation
+
+- Zombie health, Attack and Death state
+
+- Zombie Hit Interaction
+
+- Player HUD
+
+- Zombie randomizer on Spawn
+
+- Highscore System
+
+- Money Spending for Unlocking Level
+
+- UI Widgets
+
+
+# Wave Increment and Zombie Spawn
+When all the zombies in the level are eliminated, the next wave should start with double the number of zombies in the previous level
+
+<img src="https://static.wixstatic.com/media/e8c5ff_5648ccbaf70a41f59e3ee9f8be69554c~mv2.png/v1/fill/w_1343,h_622,al_c,q_90,enc_auto/wave-increment_orig.png" alt="Screenshot 2023-02-27 152520.png" width="100%" ></img>
+
+In this blueprint logic the current wave is set to one at start of the game and for each wave increment the current wave is multiplied by 2 and it is set to the total number of zombies to that particular wave, so if the level is 3 its multiplied by 2 and 6 zombies will spawn in wave 3
+
+<img src="https://static.wixstatic.com/media/e8c5ff_e887cf3fc3b44729bb56cb9d7d6c559b~mv2.png/v1/fill/w_1346,h_558,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/zombie-death-and-wave-increment_orig.png" alt="Screenshot 2023-02-27 152520.png" width="100%" ></img>
+
+When zombies left in level is zero, so the  condition is true  then its accesses the wave increment custom node and it increments the current wave.
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/Two-65pCNLg?si=6EW0VKQPBJi6Q4YO"
+  frameborder="0"
+  allowfullscreen
+  autoplay
+  muted
+></iframe>
+
+<img src="https://static.wixstatic.com/media/e8c5ff_46a9384a03a6461c9f629c4d0e63715a~mv2.png/v1/fill/w_1075,h_757,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/behvaior-tree_orig.png" alt="Screenshot 2023-02-27 152520.png" width="100%" ></img>
+
+For the zombie movement added AI ( behavioral Tree), added logic to move zombie to random locations (normal movement)  in a certain amount of radius. when player is in vision of zombie then the zombie starting moving ( Run movement) towards the player and if in certain range zombie attacks the player.
+
+
+# Zombie Attack Logic
+
+<img src="https://static.wixstatic.com/media/e8c5ff_8cd6ddf9602748bb972e804bc61ccb53~mv2.png/v1/fill/w_1084,h_454,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/attack-logic_orig.png" alt="Screenshot 2023-02-27 152520.png" width="100%" ></img>
+
+
+# Area Unlocking System
+
+In level there are 3 unlockable areas, To unlock them the player needs to collect certain amount of money by killing zombies.
+
+<img
+src="https://static.wixstatic.com/media/e8c5ff_b9eca4c8dfba4c418c7bc8004f4967be~mv2.png/v1/fill/w_1084,h_652,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/unlocking-system_orig.png"
+alt="Screenshot 2023-02-27 152520.png" width="100%" >
+</img>
+
+When the player overlaps with the object UI will pop up and shows the required amount of money and on end overlap event it checks whether the player has required amount of money and if its true the obstacle will be destroyed and UI pops up ,  player can access that location.
+
+<img
+src="https://static.wixstatic.com/media/e8c5ff_33040a9e70d74e03b88046e78944daba~mv2.png/v1/fill/w_1084,h_668,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/unlocking-system-2_orig.png"
+alt="Screenshot 2023-02-27 152520.png" width="100%" >
+</img>
+
+When player has the money to unlock area the obstacle will be destroyed with explosion effect and will collisions will be removed and player will be able to access the location
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/ZE9IA1gsR8U?list=TLGGkiUfXB19GO8yOTA1MjAyNA"
+  frameborder="0"
+  allowfullscreen
+  autoplay
+  muted
+></iframe>
+
+
+# Zombie Randomizer on Spawn
+
+<img
+src="https://static.wixstatic.com/media/e8c5ff_c2d2fc7aa29749baac9beab452015b99~mv2.png/v1/fill/w_1080,h_604,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/zombie-randomizer_orig.png"
+alt="Screenshot 2023-02-27 152520.png" width="100%" >
+</img>
+
+On wave increment the total number of zombies is divided in between two spawn points equally and Array has been used to randomize the zombies that needs to be spawned.
