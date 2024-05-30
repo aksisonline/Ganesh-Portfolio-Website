@@ -28,7 +28,7 @@ export interface IMetadata {
   publishedAt: string
   summary: string
   roles: string
-  highlight: boolean
+  highlight: string
 }
 
 export interface IPost {
